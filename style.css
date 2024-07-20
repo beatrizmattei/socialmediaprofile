@@ -13,13 +13,19 @@
 * {
     box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
     overflow-x:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
 .main {
     background-color: var(--background-color);
     display: flex;
@@ -41,6 +47,7 @@ body {
 .container__image {
     max-width: 60px;
     border-radius: 30px;
+    margin-top: 29px;
 }
 .container__title {
     color: var(--font-color);
@@ -58,6 +65,7 @@ body {
 .container__text {
     color:#C8C8C8;
     font-size: 12px;
+    margin-top: 18px;
 }
 
 .buttons {
@@ -67,9 +75,11 @@ body {
     gap: 1rem;
     width: 100%;
     justify-content: space-between;
+    margin-top: 23px;
+    margin-bottom: 29px;
 }
 
-.buttom {
+.button {
     text-decoration: none;
     font-family: var(--main-font);
     color: var(--font-color);
@@ -84,6 +94,6 @@ body {
     margin-bottom: 0;
 }
 
-.buttom:hover {
+.button:hover {
     background-color: var(--buttom-hover);
 }
